@@ -68,7 +68,7 @@ if (process.env.MASQR === "true") {
 }
 
 app.use(express.static(path.join(__dirname, "static")))
-app.use("/ov", cors({ origin: true }))
+app.use(cors())
 
 const routes = [
   { path: "/as", file: "apps.html" },
