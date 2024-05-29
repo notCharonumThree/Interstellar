@@ -1,7 +1,7 @@
 import http from "node:http"
 import path from "node:path"
 import { createBareServer } from "@tomphttp/bare-server-node"
-var cors = require('cors')
+import cors from "cors"
 import express from "express"
 import basicAuth from "express-basic-auth"
 import cookieParser from "cookie-parser"
